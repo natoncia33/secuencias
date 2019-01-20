@@ -1,0 +1,117 @@
+/*estilo de tabla*/
+table {
+  font: .9em Arial, Helvetica, sans-serif;
+  border: 1px solid #333;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+#tbdiagnosticos, #tbpacientes{
+  margin: 0px 10px;
+}
+table th {
+  padding: 0 .3em;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color:#363636;
+}
+table th, table td {
+  	/*border: 2px solid #000;*/
+  	line-height: 2em;
+	border-collapse: collapse;
+	/*border: #FFA500 2px solid;*/
+	border: 2px  #ccc solid;
+	vertical-align: middle;
+}
+table td {
+  padding: 0 .7em;
+}
+tr {
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color:#CDDAFC;
+}
+tr:nth-child(odd) {
+  background-color:#FFFFFF;
+}
+table tr:hover {
+  background: #DAF2AF !important;
+}
+th input{
+  color:#000000;
+}
+th,td{
+  text-align:center;
+}
+/*
+th {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:#363636;
+}*/
+@media screen and (min-width: 768px) {
+table th, table td {
+max-width: 150px;
+white-space: pre; /* CSS 2.0 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3.0 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP */
+word-wrap: break-word; /* IE 5+ */
+}
+}
+/*Tabla adaptable*/
+ @media screen and (max-width: 767px) {
+/*http://codepen.io/anon/pen/QwPVNW*/
+    table {
+      border: 0;
+      width:100%;
+    }
+
+    table thead th:not(.thbotones) {
+      display: none;
+    }
+    table{
+      margin-bottom:80px;
+    }
+    .thbotones{
+      position:fixed;
+      bottom:50px;
+      background-color: transparent;
+      border-color: transparent;
+    }
+    .thbotones[data-label="Nuevo"]{
+      right:0px;
+    }
+    .thbotones[data-label="XLS"]{
+      left:0px;
+    }
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+      display: flow-root;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+/*Fin Tabla adaptable*/
+/*termina estilo de tabla*/

@@ -1,0 +1,32 @@
+Login Identificacipn (Unica) Correo (Unico) Validación si ya existe
+Corecciones Revisión
+Elegir grupo revisar
+
+
+MSJ VALIDACION.
+Usuarios.
+Msj de validar error
+No se encontraron resultados.
+El usuario con esta identificación ya existe.
+Se agregó el usuario "nombre+primer apellido" satisfactoriamente.
+Se modificó el usuario "nombre+primer apellido" satisfactoriamente.
+¿Esta seguro de eliminar al usuario con "codigo+nombre+apellido1+apellido2"?
+Se eliminó el usuario "nombre+primer apellido" satisfactoriamente.
+No se pudo eliminar a el usuario +"nombre" verifique que el usuario no este en uso.
+
+Elementos juego
+Msj de validar error
+No se permiten elementos repetidos.
+Debe existir un elemento clave.
+La figura es un distractor no puede ser la clave.
+
+Se agregó el reto "nombre reto" satisfactoriamente.
+¿Esta seguro de eliminar el reto "nombre reto"?
+Se eliminó el reto "nombre reto" satisfactoriamente.
+Se modificó el reto "nombre reto" satisfactoriamente.
+
+
+
+
+
+

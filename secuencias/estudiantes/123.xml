@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estudiantes>
+    <estudiante id="123">
+        <secuencias>
+            <secuencia>
+                <reto></reto>
+                <reto></reto>
+                <reto></reto>
+            </secuencia>
+        </secuencias>
+    </estudiante>
+</estudiantes>

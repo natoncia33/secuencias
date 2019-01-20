@@ -1,0 +1,204 @@
+    .lienzo{
+        width:304px !important;
+        height:304px !important;
+        padding:5px;
+        background-color: rgba(0,0,0,.03);
+    }
+    .lienzo2{
+        font-family: 'Comic Sans MS',cursive,sans-serif;
+        font-size: 10px;
+        width:310px !important;
+        height:310px !important;
+        padding:5px;
+        background-color: transparent;
+        margin: 0 auto;
+        position: relative;
+
+
+    }
+    #secuencias{
+        text-align:left;
+        height:180px !important;
+        overflow-x:none;
+        white-space:nowrap;
+        margin-bottom:5px;
+    }
+    #secuencias2{
+        text-align:center;
+        height:150px !important;
+        overflow-x:none;
+        white-space:normal;
+        margin-bottom:5px;
+    }
+    .elemento{
+        display:inline-block;
+        float:left;
+        width: 146px !important;
+        height:149px !important;
+        background-color: transparent;
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .elementoj{
+        display:inline-block;
+        float:left;
+        width: 146px !important;
+        height:146px !important;
+        background-color: #EEE;
+        margin-left:1px;
+        margin-right:1px;
+        font-size: 35px;
+    }
+    #elementos{
+        position:absolute;
+        width:300px !important;
+        text-align:center;
+    }
+    #elementos3{
+        position:absolute;
+        width:310px !important;
+        text-align:center;
+        white-space: normal;
+    }
+    .secuencia{
+        width:160px !important;
+        height:170px !important;
+        display:inline-block;
+        margin: 0 10px;
+        background-color: #DDD;
+    }
+    .secuencia2{
+        margin: 0 10px;
+        width:150px !important;
+        height:150px !important;
+        position:absolute;
+        display:inline;
+    }
+    .elemento2{
+    width: 74px !important;
+    height: 74px !important;
+    float:left;
+    text-align:center;
+    }
+    
+    .col-md-12{
+        width:100% !important;
+        overflow-x:auto;
+        margin-bottom:50px;
+    }
+    body{
+        overflow-x:none;
+        font-family: "Comic Sans MS",cursive,sans-serif;
+    }
+    .areaselementos{
+    position:relative;
+    margin-top: -6px;
+    margin-left: 2px;
+    }
+    .btn_elim{
+    position:absolute;
+    text-decoration:none;
+    top:0;
+    right:0;
+    text-align:right;
+    margin-right:5px;
+    color:red;
+    font-weight:bold;
+    font-size:25px;
+    font-size: 25px;
+    opacity: .5;
+    }
+.areaselementos input, .radiojuego { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.areaselementos  input + .fig, .radiojuego + .elementosj{ /* IMAGE STYLES */
+    position:absolute;
+    top:0;
+    right:0;
+    width:150px !important;
+    height:150px !important;
+    border:2px solid rgba(100,100,100,.2);
+    cursor:pointer;
+}
+.borde_rojo {
+    border: 2px solid red;
+}
+ input:checked + .fig, .radiojuego:checked  + .elementosj{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+  cursor:pointer;
+}
+.fig{
+    color:#000;
+    font-size: 35px;
+    text-align: center;
+    
+}
+.areaselementos span{
+    padding-top: 2px;
+}
+.ajustar{
+width: 150px;
+float: left;
+white-space: pre; /* CSS 2.0 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3.0 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP */
+word-wrap: break-word; /* IE 5+ */
+}
+.radiojuego span{
+        text-align: center;
+}
+.fig span{
+    top: 45px;
+    position: relative;
+}
+.fig img{
+     float: left;
+    margin-top:  -30px;
+    margin-left: 10px;
+}
+.estado_Publicado{
+    background-color:#37d037;
+    color:white;
+    font-weight:bold;
+}
+.estado_Borrador{
+    background-color:red;
+    color:white;
+    font-weight:bold;
+}
+.lienzo2_juego{
+     font-family: 'Comic Sans MS',cursive,sans-serif;
+        font-size: 10px;
+        width:310px !important;
+        height:310px !important;
+        width:720px !important;
+        height:720px !important;
+        padding:5px;
+        background-color: transparent;
+        margin: 0 auto;
+        position: relative;
+}
+.elementoj_juego{
+            display:inline-block;
+        float:left;
+        width: 146px !important;
+        height:146px !important;
+        width: 235px !important;
+        height: 235px !important;
+        background-color: #EEE;
+        margin-left:1px;
+        margin-right:1px;
+        font-size: 35px;
+}
+.fig_juego{
+    top: 45px;
+    position: relative;
+    color:#000;
+    font-size: 70px;
+    text-align: center;
+}

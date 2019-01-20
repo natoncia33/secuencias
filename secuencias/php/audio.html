@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D</title>
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+</head>
+<body>
+	<script>
+	function hablar(texto){
+		responsiveVoice.speak(texto, "Spanish Latin American Female", {pitch: 1,rate: 1});
+	}
+	</script>
+	<textarea id="txt" cols="80" rows="10">¿Donde está la letra, A?</textarea>
+	<button onclick="hablar(document.getElementById('txt').value);">Hablar</button>
+</body>
+</html>

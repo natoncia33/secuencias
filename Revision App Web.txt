@@ -1,0 +1,42 @@
+Convenciones:
+
+Nivel de cumplimiento   | Descripción
+NC                      | No existe cumplimiento de calidad
+CT                      | Existe cumplimiento total de calidad
+
+Opción revisada: Usuarios
+
+Nivel de cumplimiento: NC
+
+Observaciones
+1.	El campo buscar debe tener un tooltip que informe al usuario por qué datos puede hacerse la búsqueda 
+2.	En la búsqueda debe validarse que el dato No de resultados sea positivo, de lo contrario aparece error
+3.	Los botones nuevo, modificar deben tener ícono como el eliminar
+4.	En la opción nuevo, todos los campos deben tener tooltip que de pistas al usuario sobre el dato a ingresar
+5.	El apellido 2 debe ser opcional
+6.	El campo email debe validarse como un correo válido actualmente el dato a@c lo acepta y no debería
+7.	Los campos obligatorios deben estar marcados con * que es el estándar web para datos obligatorios
+8.	El dato identificación debe validarse que sea único en todos los registros de la base de datos.
+9.	El ancho de cada columna de la grilla mostrada debe o establecerse de forma estática o dinámicamente de acuerdo con el máximo ancho de cada dato de cada columna
+10.	La grilla no cuenta con una barra de desplazamiento horizontal
+11.	La grilla no cuenta con paginación
+12.	En la opción eliminar, el mensaje de confirmación debe tener además del código, el nombre completo (nombre, apellido1, apellido2)
+13.	Debe informársele al usuario del resultado (éxito o error) de la operación eliminar usuario
+
+
+Soluciónes
+
+1.	El campo buscar cuenta con un tootip que informa con el atributo title el mensaje "Buscar por: Identificación, Nombre, Primer apellido, Segundo apellido, Email" el cual indica los criterios de búsqueda
+2.	Cuando no hay datos en la casilla No de resultados, se toma el valor por defecto
+3.	Los botones cuentan con una representación gráfica mediante los iconos ubicados en la carpeta img
+4.	Las casillas en el formulario cuentan con un tooltip informando sobre un ejemplo o sugerencias sobre el dato a ingresar
+5.	El apellido 2 debe es opcional, se ha quitado el atributo required del formulario y se ha agregado la propiedad NULL en el campo de base de datos
+6.	El campo email cuenta con el atributo pattern el cual verifica que se cuente además del signo  @, también cuente con un texto, el punto . y mínimo 2 caracteres después del punto
+7.	Después del nombre que se encuentra en una etiqueta Label, se ha ubicado un asterisco * de color rojo en los campos obligatorios, el asterisco cuenta con un tooltip idicando que ese campo es obligatorio.
+8.	En los eventos keyup u onchange se ejecuta una función en javascript la cual mediante Ajax consulta si el campo existe en la base de datos, de igual manera los campos únicos como la identificación o correo se encuentran indexados como únicos en la base de datos
+9.	Para establecer el ancho de forma relativa se aplica el estilo ubicado en a Linea 54 del archivo estilo_tabla.css en donde se indica un max-width ancho máximo y un white-space que permite agregar saltos de línea para ajustarse al ancho
+10.	Se agregó un scroll horizontal en el div con class content mediante el estilo con la propiedad overflow
+11.	La grilla cuenta con un paginación mediante la librería zebra pagination
+12.	Al momento de solicitar la confirmación para eliminar, el mensaje muestra los datos: Identificación, Nombre, Primer Apellido y Segundo Apellido
+13.	Para cada acción en la base de datos, insertar, modificar, buscar o eliminar se cuenta con alertas o mensajes sobre el resultado de la operación
+
